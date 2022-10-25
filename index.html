@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div id="calculatorBody">
+        <div> <span id="display">0</span> </div>
+        <div class="row">
+        </div>
+        <div class="row">
+            <input type="button" onclick="numbers('7')" value="7" data-key="55" />
+            <input type="button" onclick="numbers('8')" value="8" data-key="56" />
+            <input type="button" onclick="numbers('9')" value="9" data-key="57" />
+            <input class="orange" type="button" onclick="operators('+')" value="+" data-key="61" />
+        </div>
+        <div class="row">
+            <input type="button" onclick="numbers('4')" value="4" data-key="52" />
+            <input type="button" onclick="numbers('5')" value="5" data-key="53" />
+            <input type="button" onclick="numbers('6')" value="6" data-key="54" />
+            <input class="orange" type="button" onclick="operators('-')" value="-" data-key="173" />
+        </div>
+        <div class="row">
+            <input type="button" onclick="numbers('1')" value="1" data-key="49" />
+            <input type="button" onclick="numbers('2')" value="2" data-key="50" />
+            <input type="button" onclick="numbers('3')" value="3" data-key="51" />
+            <input class="orange" type="button" onclick="operators('*')" value="*" data-key="88" />
+        </div>
+        <div class="row">
+            <input type="button" onclick="numbers('0')" value="0" data-key="48" />
+            <input type="button" onclick="numbers('.')" value="." data-key="190" />
+            <input class="orange" id="equals" type="button" onclick="calculateTotal(inputs)" value="=" data-key="69" />
+            <input class="orange" type="button" onclick="operators('/')" value="/" data-key="68" />
+        </div>
+        <div class="row">
+            <input id="AC" type="button" onclick="clearDisplay()" value="AC" data-key="8" />
+        </div>
+    </div>
+</body>
+
+</html>
